@@ -6,14 +6,14 @@ const feedbackDiv = document.getElementById('form-feedback')
 form.addEventListener('submit', function(event){
     event.preventDefault();
 
-    const userName = document.getElementById('userName').Value.trim();
+    const username = document.getElementById('username').Value.trim();
     const email = document.getElementById('email').value.trim();
     const password = document.getElementById('password').value.trim();
 
     let isValid = true;
     const messages = [];
 
-    if(userName.length < 3) {
+    if(username.length < 3) {
         isValid = false;
         messages.push("Username must be 3 characters long!");
     }
