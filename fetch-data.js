@@ -12,11 +12,14 @@ async function fetchUserData() {
         }
         const users = await response.json();
         console.log(json);
+        
     } catch(error) {
         console.error(error.message);
     }
     dataContainer.innerHTML = '';
 };
+
+const userList = document.createElement('<ul>');
 
 
 
